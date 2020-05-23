@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;800&family=Raleway:wght@300;500;700&display=swap');
+body, html{
+    margin: 0px;
+    padding: 0px;
+}
+::selection {
+    background-color: rgb(173, 187, 172);
+    color: white;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100vw;
+    height: calc(80px + 2vh); 
+    color:#313131;
+    background-color: rgb(248, 250, 252);
+    position: fixed;
+    box-shadow: 10px 0px 60px 0px rgba(0,0,0,0.2);
+    transition-duration: 0.2s;
+    user-select: none;
+    z-index: 3;
+}
+.header-fill-fixed-space {
+    width: 100%;
+    height: 8vh;
+}
+.brand-name{
+    font-size: 2.4rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    margin-left:5vw
+}
+.header-button-wrapper{
+    margin-right:5vw;
+    flex-direction: row;
+    display:flex;
+    justify-content: space-around;
+    width: 33vw;
+}
+.header-button {
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.0rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.header-button:hover {
+    color:rgb(114, 114, 114);
+}
+.header-button-sign-in {
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    border: 2px solid rgb(1, 94, 1);
+    color:rgb(1, 94, 1);
+    border-radius: 4px;
+    padding:8px 12px; 
+    margin-left:8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.header-button-sign-up {
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    border: 2px solid rgb(1, 94, 1);
+    background-color: rgb(1, 94, 1);
+    color:white;
+    border-radius: 4px;
+    padding:8px 8px; 
+    margin:0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.header-button-sign-up:hover{
+    border: 2px solid rgb(7, 61, 7);
+    background-color: rgb(7, 61, 7);
+}
+.header-button-sign-in:hover{
+    border-color: rgb(7, 61, 7);
+    color:rgb(7, 61, 7);
+}
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.home-info {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-right: 10vw;
+}
+.home-title{
+    font-size: 2.6rem;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    color:rgb(69, 105, 72);
+    margin-bottom:10px;
+}
+.home-title span {
+    font-weight: 700;
+    color:rgb(30, 77, 25);
+}
+.home-subtitle {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: 'Playfair Display',serif;
+    color: rgb(78, 78, 78);
+}
+.home-illustration {
+    width: 25%;
+    position: relative;
+    height: 25vw;
+}
+.home-illustration-background {
+    background-color: rgb(69, 105, 72);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: calc(20vw + 20vh);
+    height: calc(20vw + 20vh);
+    z-index: -1;
+    border-radius: 80% 40% 80% 40%;
+}
+
+.home-call-to-action{
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: 'Raleway',sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:fit-content;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color:white;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color:rgb(69, 105, 72);
+    transition:0.2s ease-out 0s;
+}
+.home-call-to-action:hover{
+    background-color: rgb(1, 94, 1);
+    padding-right: 40px;
+}
+
+.show-more{
+    width: 100%;
+    height: 10vw;
+    font-family: 'Playfair Display', serif;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: rgb(69, 105, 72);
+    color:white;
+    font-weight: 700;
+    font-size: 3rem;
+}
+.showcase-ui{
+    height: 40vh;
+    margin:5vw 10vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+.showcase-ui img{
+    width: 40vw;
+    height: 22.1vw;
+}
+.showcase-text-heading{
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: 'Playfair Display', serif;
+}
+.showcase-text-heading span{
+    background-color:rgb(233, 240, 234);
+    background-position: -5px;
+}
+.showcase-text{
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color:rgb(43, 43, 43)
+}
+.row-section-info{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.illustration-container{
+    width: 25vw;
+    height: 25vw;
+}
+.alt-fix{   
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.illustration-row-rev{
+    height: 25vw;
+}
+.illustration-row{
+    width: 100%;
+}
+.bullet-list{
+    width: 30vw;
+}
+.bullet-title{
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    margin-bottom:40px
+}
+.bullet-title span{
+    background-color:rgb(233, 240, 234);
+    background-position: -5px;
+}
+.bullet-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Playfair Display', serif;
+    margin-bottom:20px;
+}
+.bullet-point{
+    width: 8px;
+    height: 8px;
+    border-radius: 16px;
+    background-color:rgb(69, 105, 72);
+    margin-top: 10px;
+    margin-right:20px;
+}
+.row-reverse-section-info{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 20vh;
+}
